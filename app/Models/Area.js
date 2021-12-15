@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const luxon_1 = require("luxon");
 const Orm_1 = global[Symbol.for('ioc.use')]("Adonis/Lucid/Orm");
-const user_1 = __importDefault(require("./user"));
+const user_1 = __importDefault(require("./User"));
 const View_1 = __importDefault(require("./View"));
 class Area extends Orm_1.BaseModel {
 }
