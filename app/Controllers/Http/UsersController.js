@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const user_1 = __importDefault(global[Symbol.for('ioc.use')]("App/Models/user"));
+const user_1 = __importDefault(global[Symbol.for('ioc.use')]("App/Models/User"));
 class UsersController {
     async index({ response }) {
         const users = await user_1.default.query().preload('area').preload('role');
